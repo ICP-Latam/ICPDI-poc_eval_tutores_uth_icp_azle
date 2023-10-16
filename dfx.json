@@ -1,0 +1,13 @@
+{
+    "canisters": {
+        "eval_tutores_prueba": {
+            "type": "custom",
+            "main": "src/index.ts",
+            "candid": "src/index.did",
+            "build": "npx azle eval_tutores_prueba",
+            "wasm": ".azle/eval_tutores_prueba/eval_tutores_prueba.wasm",
+            "gzip": true
+        }
+    }
+}
+

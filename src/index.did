@@ -1,0 +1,4 @@
+service: () -> {
+    obtenerRegistros: () -> (vec record {puntaje:float64; aprobado:bool; aplicante:principal; respuestas:vec nat8; fecha:text}) query;
+    registrar: (vec nat8, text) -> (bool);
+}
