@@ -1,4 +1,4 @@
-import { bool, Canister, int, float64, query, text, update, Void, Principal, ic, Some, None, StableBTreeMap, Vec, nat8, Record } from 'azle';
+import { bool, UI, FormConfig, Canister, int, float64, query, text, update, Void, Principal, ic, Some, None, StableBTreeMap, Vec, nat8, Record } from 'azle';
 import { HttpResponse, HttpTransformArgs, managementCanister } from 'azle/canisters/management';
 
 //arreglo de int de 21 elementos que representa las respuestas de la evaluacion
@@ -48,6 +48,8 @@ export default Canister({
 
 
     }),
+
+
     //se obtienen los registros de un aplicante
     obtenerRegistros: query([], Vec(Registro), () => {
         return registros.values();
